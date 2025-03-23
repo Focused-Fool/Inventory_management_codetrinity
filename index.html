@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inventory Management System</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <button id="theme-toggle">🌙 Dark Mode</button>
+        <h1>Inventory Management System</h1>
+
+        <!-- Inventory Section -->
+        <div>
+            <h2>Inventory</h2>
+            <ul id="inventory-list"></ul>
+        </div>
+
+        <!-- Orders Section -->
+        <div>
+            <h2>Pending Orders</h2>
+            <ul id="order-list"></ul>
+        </div>
+
+        <!-- Recent Orders Section -->
+        <div>
+            <h2>Recent Orders</h2>
+            <ul id="recent-orders-list"></ul>
+            <button onclick="clearRecentOrders()">🗑 Clear Recent Orders</button>
+        </div>
+
+        <!-- Buttons for Actions -->
+        <div>
+            <button id="create-order-btn">Create Order</button>
+            <button id="process-order-btn">Process Order</button>
+            <button id="add-product-btn">Add Product</button>
+            <button id="delete-product-btn">Delete Product</button>
+        </div>
+        <!-- Download Data Buttons -->
+        <div>
+            <button onclick="downloadData('inventory')">📥 Download Inventory</button>
+            <button onclick="downloadData('pending_orders')">📥 Download Pending Orders</button>
+            <button onclick="downloadData('completed_orders')">📥 Download Completed Orders</button>
+        </div>
+
+        <!-- JavaScript File -->
+        <script src="work.js"></script>
+    </body>
+</html>
